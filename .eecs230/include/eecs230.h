@@ -21,7 +21,11 @@
     Revised November 28 2013: add a few container algorithms
     Revised June 8 2014: added #ifndef to workaround Microsoft C++11 weakness
 
-    Revised January 5, 2016: EECS230 version.
+    Revised Jan. 5, 2016: EECS230 version.
+
+    Revised Jan. 27, 2016: added gtest include
+
+    Revised Feb. 5, 2016: changed gtest to UnitTest++
 */
 
 #pragma once
@@ -42,6 +46,8 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace eecs230 {
 
