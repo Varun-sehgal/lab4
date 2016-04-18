@@ -1,23 +1,24 @@
 #include "eecs230.h"
 
 struct Date {
-    int year;
-    int month;
-    int day;
-    bool isAD;
-    Date(int y, int m, int d, bool AD)
+    int  year;
+    int  month;
+    int  day;
+    bool is_AD;
+
+    Date(int y, int m, int d, bool ad)
     {
-        year = y;
+        year  = y;
         month = m;
-        day = d;
-        isAD = AD;
+        day   = d;
+        is_AD = ad;
     };
 };
 
 int main()
 try
 {
-    Date today(2016,1,27,true);
+    Date today{2016, 1, 27, true};
     cout << today.day;
 }
 
