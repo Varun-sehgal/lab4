@@ -53,10 +53,10 @@ def copy_even(lst):
 
 def copy_start_with_a(lst):
     """Makes a copy of the given list, but only with strings that start with a/A
-    >>> copy_start_with_a(["Apricot", "Banana", "Allison", "a cookie"])
-    ["Apricot", "Allison", "a cookie"]
-    >>> copy_start_with_a(["", " ", "Amy"])
-    ["Amy]
+    >>> copy_start_with_a(['Apricot', 'Banana', 'Allison', 'a cookie'])
+    ['Apricot', 'Allison', 'a cookie']
+    >>> copy_start_with_a(['', ' ', 'Amy'])
+    ['Amy']
     """
     pass  # replace with your code
 
@@ -89,19 +89,13 @@ def cartesian_product(lst1, lst2):
 
 def sort_number(lst):
     """Sorts the given list in ascending order in place
-    >>> sort_number([4, 7, 8, 1, -2])
-    [-2, 1, 4, 7, 8]
-    >>> sort_number([-10])
-    [-10]
-    >>> sort_number([])
-    0.0
     """
     pass  # replace with your code
 
 
 def sort_fish(lst):
     """Sorts Fish in the given list by weight in descending order in place
-    >>> sort_fish([Fish("Alice", 12, 50, "Salmon", "Fresh"), Fish("Bob", 7, 32, "Catfish", "Fresh"), Fish("Charlie", 2, 100, "Goldfish", "Fresh"), Fish("Dana", 20, 80, "Shark", "Salt")])
-    [Fish("Dana", 20, 80, "Shark", "Salt"), Fish("Alice", 12, 50, "Salmon", "Fresh"), Fish("Bob", 7, 32, "Catfish", "Fresh"), Fish("Charlie", 2, 100, "Goldfish", "Fresh")]
+    >>> sort_fish([Fish('Alice', 12, 50, 'Salmon', WaterType.FRESH), Fish('Bob', 7, 32, 'Catfish', WaterType.FRESH), Fish('Charlie', 2, 100, 'Goldfish', WaterType.FRESH), Fish('Dana', 20, 80, 'Shark', WaterType.SALT)])
+    [Fish('Dana', 20, 80, 'Shark', WaterType.SALT), Fish('Alice', 12, 50, 'Salmon', WaterType.FRESH), Fish('Bob', 7, 32, 'Catfish', WaterType.FRESH), Fish('Charlie', 2, 100, 'Goldfish', WaterType.FRESH)]
     """
     pass  # replace with your code
