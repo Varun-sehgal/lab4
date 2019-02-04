@@ -42,6 +42,14 @@ num_list = [-2, -1, -4, 1, 2]
 positive_list = list(filter(lambda x: x > 0, num_list)) // [1, 2]
 ```
 ## Write functions
+Open lab4 and implement the functions. Here are some key concepts we want to explain:
+
+**Make a copy** vs **Modify in place**:
+
+**Make a copy** requires you to return a new object, which is a different object from the given list, but with the same value.
+**Modify in place** requires you to modify the given list, without creating any new object.
+
+
 **Selection Sort:**
 
 The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
@@ -83,5 +91,5 @@ Once it’s ready, check that it's good to go by running pytest:
 Mac$ $PY -m pipenv run pytest
 Win> $PY -m pipenv run pytest
 ```
-
+If all functions are implemented correctly, your code should pass all tests.
 
