@@ -1,11 +1,20 @@
+from enum import Enum, auto
+from lib230 import record
 
+
+class WaterType(Enum):
+    FRESH = auto()
+    BRACKISH = auto()
+    SALT = auto()
+
+
+@record
 class Fish:
-    def __init__(self, name, weight, age, species, water_type):
-        self.name = name
-        self.weight_kg = weight
-        self.age_days = age
-        self.species = species
-        self.water_type = water_type
+    name: str
+    weight_kg: float = 0
+    age_days: int = 0
+    species: str = 'unknown'
+    water_type: WaterType = WaterType.FRESH
 
 
 def get_sum(lst):
