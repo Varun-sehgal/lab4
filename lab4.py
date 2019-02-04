@@ -74,7 +74,7 @@ def copy_reverse(lst):
 
 
 def reverse(lst):
-    """Reverses the given list in place, returns nothing
+    """Reverses the given list in place
     """
     pass  # replace with your code
 
