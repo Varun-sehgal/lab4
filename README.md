@@ -6,16 +6,21 @@ In this lab, we are going to furthur explore the data structure List and practic
 Create a list:
 ```
 empty_list = []
-fruits = ["apple", "banana", "cherry"]
+fruits = ['apple', 'banana', 'cherry']
 ```
 Access items:
 ```
-my_fruit = fruits[1] //"banana"
+Python console
+>>> my_fruit = fruits[1]
+>>> print(fruits[1])
+'banana'
 ```
 Change item value:
 ```
-fruits[0] = "strawberry"
-print(fruits) //["strawberry", "banana", "cherry"]
+Python console
+>>> fruits[0] = 'strawberry'
+>>> print(fruits)
+['strawberry', 'banana', 'cherry']
 ```
 Loop through a list:
 ```
@@ -24,22 +29,37 @@ for x in fruits:
 ```
 List length:
 ```
-print(len(fruits)) //3
+Python console
+>>> print(len(fruits))
+>>> 3
 ```
 Add item:
 ```
-fruits.append("dragon fruit") //["strawberry", "banana", "cherry", "dragon fruit"]
-fruits.insert(1, "mango") //["strawberry", "mango", "banana", "cherry", "dragon fruit"]
+Python console
+>>> fruits.append('dragon fruit')
+>>> print(fruits)
+['strawberry', 'banana', 'cherry', 'dragon fruit']
+>>> fruits.insert(1, 'mango')
+>>> print(fruits)
+['strawberry', 'mango', 'banana', 'cherry', 'dragon fruit']
 ```
 Remove item:
 ```
-fruits.remove("strawberry") //["mango", "banana", "cherry", "dragon fruit"]
-fruits.pop() //["mango", "banana", "cherry"]
+Python console
+>>> fruits.remove('strawberry')
+>>> print(fruits)
+['mango', 'banana', 'cherry', 'dragon fruit']
+>>> fruits.pop()
+>>> print(fruits)
+['mango', 'banana', 'cherry']
 ```
 Filter:
 ```
-num_list = [-2, -1, -4, 1, 2]
-positive_list = list(filter(lambda x: x > 0, num_list)) // [1, 2]
+Python console
+>>> num_list = [-2, -1, -4, 1, 2]
+>>> positive_list = list(filter(lambda x: x > 0, num_list))
+>>> print(num_list)
+[1, 2]
 ```
 ## Write functions
 Open lab4 and implement the functions. Here are some key concepts we want to explain:
