@@ -1,5 +1,6 @@
 from enum import Enum, auto
 from lib230 import record
+import math
 
 
 class WaterType(Enum):
@@ -24,7 +25,7 @@ def get_sum(lst):
     >>> get_sum([4.567])
     4.567
     >>> get_sum([])
-    0.0
+    0
     """
     pass  # replace with your code
 
@@ -43,8 +44,8 @@ def only_non_negative_sum(lst):
 
 def copy_even(lst):
     """Makes a copy of the given list, but only with those even numbers
-    >>> copy_even([1,2,3,4,5,6,7,8])
-    [2,4,6,8]
+    >>> copy_even([1, 2,3, 4, 5, 6, 7, 8])
+    [2, 4, 6, 8]
     >>> copy_even([-10, 0])
     [-10, 0]
     """
@@ -81,8 +82,8 @@ def reverse(lst):
 
 def cartesian_product(lst1, lst2):
     """Returns a list of cartesian products of the given lists
-    >>> cartesian_product([1.1, 2.2], [3.3, 4.4])
-    [3.63, 9.68]
+    >>> cartesian_product([1.1, 2.2], [3.3, 4.6])
+    [3.63, 10.12]
     """
     pass  # replace with your code
 
@@ -95,7 +96,5 @@ def sort_number(lst):
 
 def sort_fish(lst):
     """Sorts Fish in the given list by weight in descending order in place
-    >>> sort_fish([Fish('Alice', 12, 50, 'Salmon', WaterType.FRESH), Fish('Bob', 7, 32, 'Catfish', WaterType.FRESH), Fish('Charlie', 2, 100, 'Goldfish', WaterType.FRESH), Fish('Dana', 20, 80, 'Shark', WaterType.SALT)])
-    [Fish('Dana', 20, 80, 'Shark', WaterType.SALT), Fish('Alice', 12, 50, 'Salmon', WaterType.FRESH), Fish('Bob', 7, 32, 'Catfish', WaterType.FRESH), Fish('Charlie', 2, 100, 'Goldfish', WaterType.FRESH)]
     """
     pass  # replace with your code
